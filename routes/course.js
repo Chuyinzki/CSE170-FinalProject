@@ -1,8 +1,13 @@
-  exports.viewCourse = function(req, res) {
-  // controller code goes here 
+	exports.viewCourse = function(req, res) {
+  	  // controller code goes here 
 	  var name = req.params.name;
+
 	  console.log("The course name is: " + name);
+	  //console.log(classing);
   	  res.render('course', {
-    'courseName': name
-	});
+  	  	'courseID': name,
+  	  	'courseName': '',
+        'courseDescription': ''
+  	  });
+  	  //console.log("The course name is: ");
   };
