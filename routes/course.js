@@ -1,14 +1,16 @@
-var courses = require('../courses.json');
+var data = require('../courses.json');
 
 	exports.viewCourse = function(req, res) {
   	  // controller code goes here 
-	  var name = req.params.name;
-    console.log("The course name is: " + name);
+	  var index = data.index[req.params.name];
+    var course = data.courses[index];
+    console.log("The course index is: " + index);
+    console.log("The course name is: " + course.courseID );
 	  //console.log(classing);
   	  res.render('course', {
-  	  	'courseID': name,
-  	  	'courseName': '',
-        'courseDescription': ''
+  	  	'courseID': course.courseID,
+  	  	'courseName': course.courseName,
+        'courseDescription': course.courseDescription
   	  });
   	  //console.log("The course name is: ");
   };
