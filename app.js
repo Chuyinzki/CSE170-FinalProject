@@ -42,7 +42,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/minor', myMinor.view)
 app.get('/courses', allClasses.view)
-app.get('/courses/:courseID', course.viewCourse);
+app.get('/courses/:name', course.viewCourse);
 app.get('/about', about.view)
 // Example route
 // app.get('/users', user.list);

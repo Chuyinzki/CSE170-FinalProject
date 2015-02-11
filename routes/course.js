@@ -1,8 +1,9 @@
+var courses = require('../courses.json');
+
 	exports.viewCourse = function(req, res) {
   	  // controller code goes here 
 	  var name = req.params.name;
-
-	  console.log("The course name is: " + name);
+    console.log("The course name is: " + name);
 	  //console.log(classing);
   	  res.render('course', {
   	  	'courseID': name,
