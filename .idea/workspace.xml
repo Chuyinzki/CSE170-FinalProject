@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="885dac23-d74c-4f11-8cdb-c85b9539667c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/course.handlebars" afterPath="$PROJECT_DIR$/views/course.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/rate.handlebars" afterPath="$PROJECT_DIR$/views/rate.handlebars" />
     </list>
     <ignored path="CSE170-FinalProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rate.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rate.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/rate.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6462428" vertical-offset="1294" max-vertical-offset="2159">
-              <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
+            <state vertical-scroll-proportion="-16.923077" vertical-offset="1294" max-vertical-offset="2159">
+              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course.handlebars" pinned="false" current-in-tab="false">
+      <file leaf-file-name="course.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/course.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.76923" vertical-offset="512" max-vertical-offset="1411">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.81093395" vertical-offset="461" max-vertical-offset="1462">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -83,8 +82,8 @@
         <option value="$PROJECT_DIR$/routes/course.js" />
         <option value="$PROJECT_DIR$/routes/rate.js" />
         <option value="$PROJECT_DIR$/views/allClasses.handlebars" />
-        <option value="$PROJECT_DIR$/views/course.handlebars" />
         <option value="$PROJECT_DIR$/views/rate.handlebars" />
+        <option value="$PROJECT_DIR$/views/course.handlebars" />
       </list>
     </option>
   </component>
@@ -92,8 +91,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1120" />
-    <option name="width" value="800" />
+    <option name="x" value="691" />
+    <option name="width" value="1229" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -230,7 +229,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1120" y="0" width="800" height="1040" extended-state="0" />
+    <frame x="691" y="0" width="1229" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -238,7 +237,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13849959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -435,18 +434,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/course.handlebars">
+    <entry file="file://$PROJECT_DIR$/views/rate.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.76923" vertical-offset="512" max-vertical-offset="1411">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        <state vertical-scroll-proportion="-16.923077" vertical-offset="1294" max-vertical-offset="2159">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/rate.handlebars">
+    <entry file="file://$PROJECT_DIR$/views/course.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6462428" vertical-offset="1294" max-vertical-offset="2159">
-          <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.81093395" vertical-offset="461" max-vertical-offset="1462">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
           <folding />
         </state>
       </provider>
