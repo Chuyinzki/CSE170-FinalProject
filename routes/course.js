@@ -6,7 +6,6 @@ var data = require('../courses.json');
     var course = data.courses[index];
     console.log("The course index is: " + index);
     console.log("The course name is: " + course.courseID );
-	  //console.log(classing);
   	  res.render('course', {
   	  	'courseID': course.courseID,
   	  	'courseName': course.courseName,

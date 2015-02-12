@@ -13,6 +13,7 @@ var myMinor = require('./routes/myMinor');
 var allClasses = require('./routes/allClasses');
 var course = require('./routes/course');
 var about = require('./routes/about');
+var rate = require('./routes/rate');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,10 +41,11 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/minor', myMinor.view)
-app.get('/courses', allClasses.view)
+app.get('/minor', myMinor.view);
+app.get('/courses', allClasses.view);
 app.get('/courses/:name', course.viewCourse);
-app.get('/about', about.view)
+app.get('/about', about.view);
+app.get('/courses/:name/rate', rate.view);
 // Example route
 // app.get('/users', user.list);
 
