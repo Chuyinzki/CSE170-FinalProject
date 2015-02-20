@@ -53,67 +53,87 @@
         <h3><center><b>So tell us how you REALLY feel!</b></center></h3>
         <br>
         <p><center><b>From 0 being least and 9 being greatest...</b></center></p>
+        <hr>
 
+        <form id="new-rating-form" role="form">
 
-        <div class="col-xs-4">
-            <p>Difficulty?</p>
-            <select class="selectpicker" id="difficulty">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-            </select>
+        
+            <div class="form-group" style="visibility:hidden; height:0">
+                <label for="courseNumber"></label>
+                <input type="text" class="form-control" id="courseNumber" value="{{courseNumber}}">
+            </div>
+        <div>
+            <p> <b>Rate difficulty of class</b></p>
+        <select class="form-control" id="difficulty">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        </div>
+        <hr>
+
+        <div>
+            <p> <b>Rate enjoyability of class</b></p>
+        <select class="form-control" id="enjoyability">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        </div>
+        <hr>
+
+        <div>
+            <p> <b>Rate usefulness of class </b></p>
+        <select class="form-control" id="usefulness">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        </div>
+        <hr>
+
+        <div>
+            <div class="form-group">
+                <label for="review"><b>Please tell us a little about how you felt about this class :D</b></label>
+                <input type="text" class="form-control" id="review" placeholder="Enter in review">
+            </div>
         </div>
 
-        <div class="col-xs-4">
-            <p>Enjoyability?</p>
-            <select class="selectpicker" id="enjoyability">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-            </select>
-        </div>
-
-        <div class="col-xs-4">
-            <p>Usefulness?</p>
-            <select class="selectpicker" id="usefulness">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-            </select>
-        </div>
-
-        <p><b>Please tell us a little about how you felt about this class :D</b></p>
-        <textarea class="form-control" rows="3"></textarea>
-
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <a class="btn btn-primary pull-right" href="/courses/{{courseName}}" role="button">Rate it!</a>
+        <button id="newRatingSubmitButton" type="button" class="btn btn-default pull-right">Rate it!</button>
         <p><a href="/courses/{{courseName}}">Back &raquo;</a></p>
+
+
+      </form>
+      <br>
+      <hr>
 
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../../js/introHCI.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
 

@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var myMinor = require('./routes/myMinor');
@@ -16,6 +17,14 @@ var about = require('./routes/about');
 var rate = require('./routes/rate');
 // Example route
 // var user = require('./routes/user');
+
+// Connect to the Mongo database, whether locally or on Heroku
+// MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
+var local_database_name = 'classapped';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
+
 
 var app = express();
 
@@ -46,6 +55,7 @@ app.get('/courses', allClasses.view);
 app.get('/courses/:name', course.viewCourse);
 app.get('/about', about.view);
 app.get('/courses/:name/rate', rate.view);
+app.post('/rating/new', rate.addRating);
 // Example route
 // app.get('/users', user.list);
 
