@@ -26,7 +26,13 @@ exports.addRating = function(req, res) {
   );
   // make a new Project and save it to the DB
   // YOU MUST send an OK response w/ res.send();
-  newRating.save(afterNew);
+  console.log("This is the difficulty" + newRating.difficulty);
+
+  var diff = newRating.difficulty;
+  var enj = newRating.enjoyability;
+  var use = newRating.usefulness;
+
+  if( diff > 0 && diff <= 10 && enj > 0 && enj <= 10 && use > 0 && use <= 10) newRating.save(afterNew);
   function afterNew(err)
   {
     if(err) {console.log(err); res.send(500);}

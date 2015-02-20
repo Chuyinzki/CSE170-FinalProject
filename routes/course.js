@@ -17,14 +17,50 @@ var data = require('../courses.json');
         function renderCourse(err, ratings)
         {
           if(err) console.log(err);
-          console.log(ratings);
+          /////////////DOING DIFFICULTY MATH//////////////////////////
+          var i = 0;
+          var accDiff = 0;
+          var accEnj = 0;
+          var accUse = 0;
+          var curNum = 0;
+          var size = ratings.length;
+          console.log("This ratings size is: " + size);
+          while(i < ratings.length){
+            curNum = ratings[i].difficulty;
+            console.log("This ratings.difficulty is: " + ratings[i].difficulty);
+            accDiff += curNum;
+
+            curNum = ratings[i].enjoyability;
+            console.log("This ratings.enjoyability is: " + ratings[i].enjoyability);
+            accEnj += curNum;
+
+            curNum = ratings[i].usefulness;
+            console.log("This ratings.usefulness is: " + ratings[i].usefulness);
+            accUse += curNum;
+
+            i++;
+          }
+          accDiff = Math.round((accDiff/size) * 100) / 100;
+          accEnj = Math.round((accEnj/size) * 100) / 100;
+          accUse = Math.round((accUse/size) * 100) / 100;
+
+          console.log("This ratings size is: " + size);
+          if (size = 0){
+            accDiff = "---";
+            accEnj = "---";
+            accUse = "---";
+          }
+          //console.log("The total difficulty is: " + accDiff);
             res.render('course', {
               'courseID': course.courseID,
               'courseName': course.courseName,
               'courseDescription': course.courseDescription,
               'courseFirstName': splitName[0],
               'courseSecondName': splitName[1],
-              'ratings': ratings
+              'ratings': ratings,
+              'difficulty': accDiff,
+              'enjoyability': accEnj,
+              'usefulness': accUse
             });
         }
   	  //console.log("The course name is: ");
