@@ -45,7 +45,7 @@ var data = require('../courses.json');
           accUse = Math.round((accUse/size) * 100) / 100;
 
           console.log("This ratings size is: " + size);
-          if (size = 0){
+          if (size == 0){
             accDiff = "---";
             accEnj = "---";
             accUse = "---";
