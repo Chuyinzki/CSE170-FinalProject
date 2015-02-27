@@ -15,6 +15,7 @@ var allClasses = require('./routes/allClasses');
 var course = require('./routes/course');
 var about = require('./routes/about');
 var rate = require('./routes/rate');
+var indexB = require('./routes/indexB');
 // Example route
 // var user = require('./routes/user');
 
@@ -50,6 +51,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/indexB', indexB.view);
 app.get('/minor', myMinor.view);
 app.get('/courses', allClasses.view);
 app.get('/courses/:name', course.viewCourse);
