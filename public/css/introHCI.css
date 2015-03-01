@@ -12,6 +12,7 @@
 .jumbotron {
 	position: relative;
 	background: none;
+     margin-top:60px;
 }
 
 .jumbotron:after {
