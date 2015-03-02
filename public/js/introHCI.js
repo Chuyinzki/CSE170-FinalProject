@@ -17,6 +17,16 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+	
+/*	$(".version_a").click(function(){
+    //add your Woopra tracking code for version A's like button click event
+    	woopra.track("a_version_about_click");
+  	})
+
+ 	$(".version_b").click(function(){
+    //add your Woopra tracking code for version A's like button click event
+    	woopra.track("b_version_about_click");
+  	})*/
 }
 
 $('#courses-navi').click(function(e)
@@ -24,8 +34,15 @@ $('#courses-navi').click(function(e)
 	window.location.href = "/courses";
 })
 
-$('#about-navi').click(function(e)
+$('#about-navia').click(function(e)
 {
+	woopra.track("a_version_about_click");
+	window.location.href = "/about";
+})
+
+$('#about-navib').click(function(e)
+{
+	woopra.track("b_version_about_click");
 	window.location.href = "/about";
 })
 
