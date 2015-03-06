@@ -75,21 +75,41 @@
       <div>
           <a href = "http://www.cape.ucsd.edu/responses/Results.aspx?Name=&CourseNumber={{courseFirstName}}+{{courseSecondName}}" target = "_blank">View the Cape! &raquo;</a>
       </div>
-
-      <h3>Reviews</h3>
-      <div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-        {{#each ratings}}
+      <br>
+      {{#if professors.length}}
+        <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>This course is taught by:</th>        
+                </tr>
+              </thead>
+              <tbody>
+              {{#each professors}}
+                <tr class="clickable-row btn-default" data-href='http://cape.ucsd.edu/responses/Results.aspx?Name={{this}}'>
+                  <td>{{this}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+            </table>
+        </div>
+      {{/if}}
         <hr>
-        <ul>{{review}}</ul>
-        <hr>
-        {{/each}}
-      </div>
+        <h3>Reviews</h3>
+        <div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+          {{#each ratings}}
+          <hr>
+          <ul>{{review}}</ul>
+          <hr>
+          {{/each}}
+        </div>
 
     </div>
     <hr>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/coursepage.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
   </body>

@@ -6,6 +6,14 @@ var data = require('../courses.json');
   	  // controller code goes here
   	    var index = data.index[req.params.name];
         var course = data.courses[index];
+        if(data.professors[0][index]==undefined)
+        {
+          var professors = {};
+        }
+        else
+        {
+          var professors = data.professors[0][index].names;
+        }
         var splitName = course.courseID.split(" ");
 
         //console.log("The course index is: " + index);
@@ -50,6 +58,7 @@ var data = require('../courses.json');
             accEnj = "---";
             accUse = "---";
           }
+          console.log(professors);
           //console.log("The total difficulty is: " + accDiff);
             res.render('course', {
               'courseID': course.courseID,
@@ -60,7 +69,8 @@ var data = require('../courses.json');
               'ratings': ratings,
               'difficulty': accDiff,
               'enjoyability': accEnj,
-              'usefulness': accUse
+              'usefulness': accUse,
+              'professors': professors,
             });
         }
   	  //console.log("The course name is: ");
